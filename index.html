@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prayer Time</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="city-Date-name">
+            <div class="city-name">
+                <h1 id="CityNameID">الباحة</h1>
+                <h6 class="date" id="dateID">الجمعة 24 نوفمبر</h6>
+            </div>
+        </div>
+
+        <div class="prayer-time d-flex">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>الفجر</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="fajr-time"></h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>الشروق</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="sunrise-time"></h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>الظهر</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="dhuhrh-time"></h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>العصر</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="asr-time"></h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>المغرب</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="sunset-time"></h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h1>العشاء</h1>
+                </div>
+                <div class="card-time d-flex">
+                    <h1 id="isha-time"></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="change-city-select d-flex">
+            <select name="" id="cities-select">
+                
+            </select>
+
+        </div>
+
+    </div>
+    
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="javascript.js">
+        
+    </script>
+</body>
+</html>
