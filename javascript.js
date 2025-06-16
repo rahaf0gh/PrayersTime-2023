@@ -26,24 +26,20 @@ let cities = [
     }
     
 ]
-for(let city of cities){
-    const content = `
-        <option>${city.arabicName}</option>
-    `
-    document.getElementById("cities-select").innerHTML += content
+for (let city of cities) {
+    const content = `<option value="${city.name}">${city.arabicName}</option>`;
+    document.getElementById("cities-select").innerHTML += content;
 }
-document.getElementById("cities-select").addEventListener("change", function () {
-    
-    document.getElementById("CityNameID").innerHTML = this.value
-    let cityName = "";
 
-    for(let city of cities){
-        if(city.arabicName == this.value){
-            cityName = city.name;
-        }
-    }
-    getParayersTimingOfCity(cityName)
-})
+document.getElementById("cities-select").addEventListener("change", function () {
+
+    document.getElementById("CityNameID").innerHTML = this.options[this.selectedIndex].text;
+
+    const englishCityName = this.value;
+    getParayersTimingOfCity(englishCityName);
+});
+
+
 
 
 function getParayersTimingOfCity(CityName){
